@@ -42,7 +42,7 @@ namespace System.Data.Entity.Hooks.Test
             _dbContextHooker.RegisterSaveHook(hook);
         }
 
-        protected override IDbContext SetupDbContext()
+        protected override Stubs.IDbContext SetupDbContext()
         {
             var dbContext = new DbContextStub();
             _dbContextHooker = CreateContextHooker(dbContext);

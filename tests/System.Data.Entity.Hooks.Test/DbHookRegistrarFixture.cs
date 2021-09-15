@@ -1,4 +1,5 @@
-﻿using NSubstitute;
+﻿
+using NSubstitute;
 using NUnit.Framework;
 using System.Data.Entity.Hooks.Test.Stubs;
 
@@ -9,7 +10,7 @@ namespace System.Data.Entity.Hooks.Test
     {
         private IDbHook _hook1;
         private IDbHook _hook2;
-        private IDbContext _dbContext;
+        private Stubs.IDbContext _dbContext;
 
         [SetUp]
         public void SetUp()
@@ -31,7 +32,7 @@ namespace System.Data.Entity.Hooks.Test
         [Test]
         public void ShouldRunPreSaveHooks_OnSaveAsync_ForAttachedEntities()
         {
-            _dbContext = SetupDbContext();
+            _dbContext =SetupDbContext();
             RegisterPreSaveHook(_hook1);
             RegisterPreSaveHook(_hook2);
 
@@ -221,6 +222,6 @@ namespace System.Data.Entity.Hooks.Test
 
         protected abstract void RegisterPreSaveHook(IDbHook hook);
 
-        protected abstract IDbContext SetupDbContext();
+        protected abstract Stubs.IDbContext SetupDbContext();
     }
 }

@@ -164,7 +164,7 @@ namespace System.Data.Entity.Hooks.Test
             _dbHookContext.AddPreSaveHook(hook);
         }
 
-        protected override IDbContext SetupDbContext()
+        protected override Stubs.IDbContext SetupDbContext()
         {
             return _dbHookContext = new DbHookContextStub();
         }
