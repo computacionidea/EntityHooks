@@ -8,7 +8,7 @@
 		<RepositoryUrl>https://github.com/computacionidea/EntityHooks.git</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/computacionidea/EntityHooks.git</PackageProjectUrl>
-		<PackageId>System.Data.Entity.Hooks.Fluent</PackageId>
+		<PackageId>Idea.Entity.Hooks.Fluent</PackageId>
 		<RootNamespace>System.Data.Entity.Hooks.Fluent</RootNamespace>
 		<AssemblyName>System.Data.Entity.Hooks.Fluent</AssemblyName>
 		<Version>1.2.1</Version>

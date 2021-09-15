@@ -8,10 +8,9 @@
 	  <RepositoryUrl>https://github.com/computacionidea/EntityHooks.git</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageProjectUrl>https://github.com/computacionidea/EntityHooks.git</PackageProjectUrl>
-	  <PackageId>System.Data.Entity.Hooks</PackageId>
+	  <PackageId>Idea.Entity.Hooks</PackageId>
 	  <RootNamespace>System.Data.Entity.Hooks</RootNamespace>
 	  <AssemblyName>System.Data.Entity.Hooks</AssemblyName>
-	  <PackageId>System.Data.Entity.Hooks</PackageId>
 	  <Version>1.2.1</Version>
 	  <Title>EntityFramework Hooks</Title>
 	  <description>EntityHooks provides an extension points for EF Code First DbContext in order to hook database operations.</description>
