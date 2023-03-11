@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
+		<TargetFramework>net6</TargetFramework>
 		<Authors>Volodymyr Dombrovskyi</Authors>
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<LangVersion>8.0</LangVersion>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/computacionidea/EntityHooks.git</RepositoryUrl>
@@ -17,6 +17,7 @@
 		<tags>ef entityframework entity dbcontext hook hooks codefirst</tags>
 		<!-- Incluye archivos pdb (info de debug) dentro del nupkg. Eliminar cuando github soporte los .snupkg -->
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<BaseOutputPath>$(OutputPath)</BaseOutputPath>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="GitVersion.MsBuild" Version="5.8.1">
