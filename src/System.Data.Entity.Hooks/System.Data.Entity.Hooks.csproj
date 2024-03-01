@@ -1,24 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-	  <TargetFramework>netstandard2.1</TargetFramework>
-	  <Authors>Volodymyr Dombrovskyi</Authors>
-	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-	  <LangVersion>8.0</LangVersion>
-	  <RepositoryType>git</RepositoryType>
-	  <RepositoryUrl>https://github.com/computacionidea/EntityHooks.git</RepositoryUrl>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageProjectUrl>https://github.com/computacionidea/EntityHooks.git</PackageProjectUrl>
-	  <PackageId>Idea.Entity.Hooks</PackageId>
-	  <RootNamespace>System.Data.Entity.Hooks</RootNamespace>
-	  <AssemblyName>System.Data.Entity.Hooks</AssemblyName>
-	  <Version>1.2.1</Version>
-	  <Title>EntityFramework Hooks</Title>
-	  <description>EntityHooks provides an extension points for EF Code First DbContext in order to hook database operations.</description>
-	  <tags>ef entityframework entity dbcontext hook hooks codefirst</tags>
-	  <!-- Incluye archivos pdb (info de debug) dentro del nupkg. Eliminar cuando github soporte los .snupkg -->
-	  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Authors>Volodymyr Dombrovskyi</Authors>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<LangVersion>11</LangVersion>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/computacionidea/EntityHooks.git</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/computacionidea/EntityHooks.git</PackageProjectUrl>
+		<PackageId>Idea.Entity.Hooks.netstd21</PackageId>
+		<RootNamespace>System.Data.Entity.Hooks</RootNamespace>
+		<AssemblyName>System.Data.Entity.Hooks</AssemblyName>
+		<Version>1.2.1</Version>
+		<Title>EntityFramework Hooks</Title>
+		<description>EntityHooks provides an extension points for EF Code First DbContext in order to hook database operations.</description>
+		<tags>ef entityframework entity dbcontext hook hooks codefirst</tags>
+		<PackageIcon>icon.png</PackageIcon>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\icon.png" Pack="true" PackagePath="icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EntityFramework" Version="6.4.4" />
+	</ItemGroup>
 </Project>
+
