@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <TargetFramework>netstandard2.1</TargetFramework>
 	  <Authors>Volodymyr Dombrovskyi</Authors>
 	  <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 	  <LangVersion>8.0</LangVersion>
@@ -19,6 +19,6 @@
 	  <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Z.EntityFramework.Classic" Version="7.1.42" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
   </ItemGroup>
 </Project>
